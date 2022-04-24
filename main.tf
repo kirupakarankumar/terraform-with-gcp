@@ -27,7 +27,7 @@ resource "google_compute_instance" "vm_instance" {
 	#metadata_startup_script_url = "gs://<BUCKET_NAME>/path/to/file/filename.sh"
 
   	service_account {
-    		email  = " tfsa-711@heroic-oven-254805.iam.gserviceaccount.com"
+    		email  = "tfsa-711@heroic-oven-254805.iam.gserviceaccount.com"
     		scopes = ["cloud-platform"]
   	}
 	tags = ["allow-nginx-ingress"]
